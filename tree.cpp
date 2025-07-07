@@ -8,7 +8,7 @@ struct Node {
 } *root = NULL;
 struct Queue {
     int front;
-    int size;
+    int size;`
     int rear;
     struct Node **Q;
 };
@@ -50,6 +50,9 @@ int nonleafnode(struct Node *p){
             return x+y;  
     }
     return 0;  
+}
+int nonLeaf2(){
+    return true;
 }
 void createQueue(struct Queue *q) {
     printf("Enter queue size: ");
