@@ -151,7 +151,7 @@ void merge(struct Node *p,struct Node *q){
     q=q->next;
     third->next=NULL;
   }
-  while(p&&q){
+  while(p&&q){ 
     if(p->data<q->data){
       last->next=p;
       last=p;
@@ -168,4 +168,7 @@ void merge(struct Node *p,struct Node *q){
   if(p) last->next=p;
   else last->next=q;
   }
+
+
+
   
